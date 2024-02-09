@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<?php get_template_part('templates/posts','loop'); ?>
-
-  <div class="col-3 col-s-12">
-    <div class="aside">
-     <?php dynamic_sidebar('sidebar'); ?>
-    </div>
-  </div>
-</div>
+<container class="main-container">
+  <articles class="article">
+    <?php get_template_part('templates/posts', 'loop'); ?>
+  </articles>
+  <aside class="aside">
+    <?php dynamic_sidebar('sidebar'); ?>
+  </aside>
+</container>
 
 <?php get_footer(); ?>
